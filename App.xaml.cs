@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows;
 
-namespace BinarySvmTest
+namespace Gramma.SVM.Validator
 {
 	/// <summary>
 	/// Interaction logic for App.xaml
