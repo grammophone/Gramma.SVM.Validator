@@ -108,23 +108,23 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Components\Gramma.Indexing\Gramma.Indexing.csproj">
+    <ProjectReference Include="..\Gramma.Indexing\Gramma.Indexing.csproj">
       <Project>{937A024F-5DC5-4CA6-864E-BF5D9CB2E039}</Project>
       <Name>Gramma.Indexing</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Components\Gramma.Kernels\Gramma.Kernels.csproj">
+    <ProjectReference Include="..\Gramma.Kernels\Gramma.Kernels.csproj">
       <Project>{D025D18B-E77C-454C-9D1A-0F6B22A51273}</Project>
       <Name>Gramma.Kernels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Components\Gramma.Optimization\Gramma.Optimization.csproj">
+    <ProjectReference Include="..\Gramma.Optimization\Gramma.Optimization.csproj">
       <Project>{A86E4DEA-C3E5-44F9-8975-B15E21F0E03A}</Project>
       <Name>Gramma.Optimization</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Components\Gramma.SVM\Gramma.SVM.csproj">
+    <ProjectReference Include="..\Gramma.SVM\Gramma.SVM.csproj">
       <Project>{96703F3E-23D2-4A59-B521-CD69C34B8DD0}</Project>
       <Name>Gramma.SVM</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Components\Gramma.Vectors\Gramma.Vectors.csproj">
+    <ProjectReference Include="..\Gramma.Vectors\Gramma.Vectors.csproj">
       <Project>{039DA284-52B0-4E55-917E-92F0CD3C5AD9}</Project>
       <Name>Gramma.Vectors</Name>
     </ProjectReference>
