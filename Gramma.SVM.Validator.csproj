@@ -67,7 +67,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BindingHelper.cs" />
     <Compile Include="DataSource.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +126,10 @@
     <ProjectReference Include="..\Gramma.Vectors\Gramma.Vectors.csproj">
       <Project>{039DA284-52B0-4E55-917E-92F0CD3C5AD9}</Project>
       <Name>Gramma.Vectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gramma.Windows\Gramma.Windows.csproj">
+      <Project>{aa54cc84-38de-479f-bffb-6aace06524c5}</Project>
+      <Name>Gramma.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

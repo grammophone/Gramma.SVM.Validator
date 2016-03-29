@@ -19,6 +19,7 @@ using Gramma.Kernels;
 using Gramma.SVM;
 using System.Threading.Tasks;
 using Gramma.SVM.CoordinateDescent;
+using Gramma.Windows;
 
 namespace Gramma.SVM.Validator
 {
