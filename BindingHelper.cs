@@ -6,7 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace BinarySvmTest
+namespace Gramma.SVM.Validator
 {
 	/// <summary>
 	/// Helpers for binding and validation.

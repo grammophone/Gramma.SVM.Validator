@@ -1,4 +1,4 @@
-﻿<Application x:Class="BinarySvmTest.App"
+﻿<Application x:Class="Gramma.SVM.Validator.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">

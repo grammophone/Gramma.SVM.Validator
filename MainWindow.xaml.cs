@@ -20,7 +20,7 @@ using Gramma.SVM;
 using System.Threading.Tasks;
 using Gramma.SVM.CoordinateDescent;
 
-namespace BinarySvmTest
+namespace Gramma.SVM.Validator
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml

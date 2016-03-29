@@ -9,7 +9,7 @@ using Gramma.Optimization;
 using System.Globalization;
 using Gramma.Vectors;
 
-namespace BinarySvmTest
+namespace Gramma.SVM.Validator
 {
 	public static class DataSource
 	{
