@@ -5,7 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Windows;
 
-namespace Gramma.SVM.Validator
+namespace Grammophone.SVM.Validator
 {
 	/// <summary>
 	/// Interaction logic for App.xaml

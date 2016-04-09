@@ -1,8 +1,8 @@
-﻿<Window x:Class="Gramma.SVM.Validator.MainWindow"
+﻿<Window x:Class="Grammophone.SVM.Validator.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Binary SVM tester" Height="560" Width="655"
-				xmlns:my="clr-namespace:Gramma.SVM.Validator">
+				xmlns:my="clr-namespace:Grammophone.SVM.Validator">
 	<Window.CommandBindings>
 		<CommandBinding Command="{x:Static my:MainWindow.TrainCommand}" CanExecute="CanExecuteTrain" Executed="ExecuteTrain" />
 		<CommandBinding Command="ApplicationCommands.Close" Executed="ExecuteClose" />

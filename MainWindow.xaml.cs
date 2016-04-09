@@ -14,14 +14,14 @@ using System.Windows.Shapes;
 using System.Threading;
 using System.Diagnostics;
 
-using Gramma.Optimization;
-using Gramma.Kernels;
-using Gramma.SVM;
+using Grammophone.Optimization;
+using Grammophone.Kernels;
+using Grammophone.SVM;
 using System.Threading.Tasks;
-using Gramma.SVM.CoordinateDescent;
-using Gramma.Windows;
+using Grammophone.SVM.CoordinateDescent;
+using Grammophone.Windows;
 
-namespace Gramma.SVM.Validator
+namespace Grammophone.SVM.Validator
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
@@ -226,7 +226,7 @@ namespace Gramma.SVM.Validator
 
 						if (trainingPairs.Count == 0) return;
 
-						Kernel<Gramma.Vectors.SparseVector> kernel;
+						Kernel<Grammophone.Vectors.SparseVector> kernel;
 
 						switch (this.Settings.KernelType)
 						{
@@ -242,16 +242,16 @@ namespace Gramma.SVM.Validator
 								return;
 						}
 
-						CoordinateDescentBinaryClassifier<Gramma.Vectors.SparseVector> classifier;
+						CoordinateDescentBinaryClassifier<Grammophone.Vectors.SparseVector> classifier;
 
 						switch (this.Settings.ClassifierType)
 						{
 							case ClassifierType.SerialCoordinateDescent:
-								classifier = new SerialCoordinateDescentBinaryClassifier<Gramma.Vectors.SparseVector>(kernel);
+								classifier = new SerialCoordinateDescentBinaryClassifier<Grammophone.Vectors.SparseVector>(kernel);
 								break;
 
 							case ClassifierType.PartitioningCoordinateDescent:
-								var partitioningClassifier = new PartitioningCoordinateDescentBinaryClassifier<Gramma.Vectors.SparseVector>(kernel);
+								var partitioningClassifier = new PartitioningCoordinateDescentBinaryClassifier<Grammophone.Vectors.SparseVector>(kernel);
 								partitioningClassifier.MaxProcessorsCount = this.Settings.ProcessorsCount;
 								classifier = partitioningClassifier;
 								break;
@@ -261,14 +261,14 @@ namespace Gramma.SVM.Validator
 						}
 
 						//classifier =
-							//new PartitioningCoordinateDescentBinaryClassifier<Gramma.Vectors.SparseVector>(
-							//new SerialCoordinateDescentBinaryClassifier<Gramma.Vectors.SparseVector>(
-							//new SequentialBinaryClassifier<Gramma.Vectors.SparseVector>(
-							//new PartitioningCoordinateDescentBinaryClassifier<Gramma.Vectors.SparseVector>(
-							//new CgChunkingLineSearchBinaryClassifier<Gramma.Vectors.SparseVector>(
-							//new CgChunkingNewtonBinaryClassifier<Gramma.Vectors.SparseVector>(
-							//new CgLineSearchBinaryClassifier<Gramma.Optimization.Vector>(
-							//new CgNewtonBinaryClassifier<Gramma.Optimization.Vector>(
+							//new PartitioningCoordinateDescentBinaryClassifier<Grammophone.Vectors.SparseVector>(
+							//new SerialCoordinateDescentBinaryClassifier<Grammophone.Vectors.SparseVector>(
+							//new SequentialBinaryClassifier<Grammophone.Vectors.SparseVector>(
+							//new PartitioningCoordinateDescentBinaryClassifier<Grammophone.Vectors.SparseVector>(
+							//new CgChunkingLineSearchBinaryClassifier<Grammophone.Vectors.SparseVector>(
+							//new CgChunkingNewtonBinaryClassifier<Grammophone.Vectors.SparseVector>(
+							//new CgLineSearchBinaryClassifier<Grammophone.Optimization.Vector>(
+							//new CgNewtonBinaryClassifier<Grammophone.Optimization.Vector>(
 							//kernel);
 
 						//classifier.Options.UseShrinking = false;
@@ -407,8 +407,8 @@ namespace Gramma.SVM.Validator
 		}
 
 		private static double GetScore(
-      BinaryClassifier<Gramma.Vectors.SparseVector> classifier, 
-      IList<BinaryClassifier<Gramma.Vectors.SparseVector>.TrainingPair> trainingPairs)
+      BinaryClassifier<Grammophone.Vectors.SparseVector> classifier, 
+      IList<BinaryClassifier<Grammophone.Vectors.SparseVector>.TrainingPair> trainingPairs)
 		{
 			int correctPredictions = 0;
 

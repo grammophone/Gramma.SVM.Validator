@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.IO;
 
-using Gramma.SVM;
-using Gramma.Optimization;
+using Grammophone.SVM;
+using Grammophone.Optimization;
 using System.Globalization;
-using Gramma.Vectors;
+using Grammophone.Vectors;
 
-namespace Gramma.SVM.Validator
+namespace Grammophone.SVM.Validator
 {
 	public static class DataSource
 	{
